@@ -1,0 +1,252 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Main navigation",
+    "line": 4,
+    "id": "main-navigation",
+    "tags": [],
+    "uri": "features\\dashboard.feature",
+    "elements": [
+      {
+        "id": "main-navigation;dashboard",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Dashboard",
+        "tags": [
+          {
+            "name": "@dashboard",
+            "line": 5
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "User launch the chrome browser",
+            "match": {
+              "location": "stepDefinitions\\dashboard.ts:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "User opens URL \"http://10.10.10.231:8082/#/app/dashboard\"",
+            "match": {
+              "location": "stepDefinitions\\dashboard.ts:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 14297000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "Page Title should be \"ATMECS - Falcon Test Repotrs\"",
+            "match": {
+              "location": "stepDefinitions\\dashboard.ts:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7445000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "Click REST API TEST RESULT Link in dashboard",
+            "match": {
+              "location": "stepDefinitions\\dashboard.ts:51"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 113000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "Select status as pass",
+            "match": {
+              "location": "stepDefinitions\\dashboard.ts:60"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3024000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Test Case Name",
+                      "Duration",
+                      "Status"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "deleteProjectApiTest",
+                      "0 Sec",
+                      "Pass"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "downloadImageApiTest",
+                      "0 Sec",
+                      "Pass"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "exportToExcelApiTest",
+                      "0 Sec",
+                      "Pass"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "getDashboardApiTest",
+                      "1 Sec",
+                      "Pass"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "recentRunsApiTest",
+                      "0 Sec",
+                      "Pass"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "reportViewApiTest",
+                      "0 Sec",
+                      "Pass"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "uploadImageApiTest",
+                      "2 Sec",
+                      "Pass"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "uploadTestngResultFileApiTest",
+                      "0 Sec",
+                      "Pass"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "viewReportApiTest",
+                      "0 Sec",
+                      "Pass"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "Able to get pass test cases",
+            "match": {
+              "location": "stepDefinitions\\dashboard.ts:67"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 953000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 24,
+            "name": "User click on toggle button",
+            "match": {
+              "location": "stepDefinitions\\dashboard.ts:84"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 118000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "status",
+                      "details"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "testrun",
+                      "10 TEST(S)"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "pass",
+                      "9"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "fail",
+                      "1"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "skip",
+                      "0"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Then ",
+            "line": 30,
+            "name": "User can able to view test status",
+            "match": {
+              "location": "stepDefinitions\\dashboard.ts:124"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 384000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
