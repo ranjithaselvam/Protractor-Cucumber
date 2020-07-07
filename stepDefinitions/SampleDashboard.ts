@@ -41,7 +41,7 @@ Then(/^Verify the atmecs logo and falcon text beside the logo are present on the
     // expect(element(by.className('your-class-name')).isDisplayed()).toBeTruthy();
     // expect(element(by.id('title'))).to.eventually.be.displayed
     // expect(element(by.css('h1'))).to.be.present;
-    // expect(element(by.css('h1'))).to.be.displayed
+    //  expect(element(by.css('h1'))).to.be.displayed
 
 
     // expect(element(by.binding('app/img/logo-atmecs-single.png'))
@@ -52,6 +52,22 @@ Then(/^Verify the atmecs logo and falcon text beside the logo are present on the
     //          .toMatch("app/img/logo-atmecs-single.png");
     //       }
  });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -2,6 +2,8 @@
 import { browser, protractor,by,element} from "protractor"
 export class OpenDashboardPage
 {
+
+  
    test= element(by.xpath("//h4[.='REST API TEST RESULT']"));
 
    customer=element(by.xpath("//select[@name='customers']"));

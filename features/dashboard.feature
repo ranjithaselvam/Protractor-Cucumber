@@ -41,9 +41,9 @@ Feature: Main navigation
 # Then  close the browser
 # @recentrun
 
-#    Scenario: Recent run
-#       When Click on recent run
-#       And Select product
-#       And Select test case
-#       Then User can view the tesct case details
+   Scenario: Recent run
+      When Click on recent run
+      And Select product
+      And Select test case
+      Then User can view the tesct case details
 

@@ -1,11 +1,14 @@
 
 
 import { browser, protractor,by,element} from "protractor"
+
 export class BasePage{
-   dashboard = element(by.css("a[ng-href='#/app/dashboard'] > span"));
-   recentRun= element(by.css("a[ng-href='#/recentruns/view'] > span"));
-   view= element(by.css("a[ng-href='#/reports/'] > span"));
-   productSnapshot= element(by.css("a[ng-href='#/product/view/'] > span"));
+locator=require('../locators/HomePageLoc.ts')
+
+   dashboard = element(by.css(this.locator.loc_dashboard));
+   recentRun= element(by.css(this.locator.loc_recentrun));
+   view= element(by.css(this.locator.loc_view));
+   productSnapshot= element(by.css(this.locator.loc_productsnapshot));
 
     clickOnDashboardTab()
     {
