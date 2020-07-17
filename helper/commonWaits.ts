@@ -1,4 +1,4 @@
-import { ElementHelper } from '../helper/commonUtility';
+import { ElementHelper } from './commonUtility'
 import { browser, ElementFinder, ExpectedConditions } from 'protractor';
 var waits = new ElementHelper()
 
@@ -33,7 +33,9 @@ export class CommonWait {
 
     }
 
-   
+    hardPause(time: number) {
+        browser.sleep(time);
+    }
 
 
 

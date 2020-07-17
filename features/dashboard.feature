@@ -1,12 +1,10 @@
+Feature:Falcon dashboard
 
-
-
-Feature: Main navigation
-   @dashboard
-   Scenario: Dashboard
-      Given User launch the chrome browser
-      When  User opens URL "http://10.10.10.231:8082/#/app/dashboard"
-      Then  Page Title should be "ATMECS - Falcon Test Repotrs"
+   Scenario:Open falcon dashboard
+      Then Verify the user landed on to the dashboard "Dashboard"
+      Then Verify the refersh icon is available on the tab right corner of the page
+      Then Verify atmecs logo on the dashboard page
+      Then Verify whether all the project available on the dashboard page
       And   Click REST API TEST RESULT Link in dashboard
       And   Select status as pass
       Then  Able to get pass test cases
@@ -22,11 +20,7 @@ Feature: Main navigation
          | viewReportApiTest             | 0 Sec    | Pass   |
 
       When  User click on toggle button
-      # Then  User can able to view total test run count
-      # Then  User can able to view pass test percentage
-      # Then  User can able to view fail test count
-      # Then  User can able to view skip test count
-      # Then  User can able to view total test case status
+
       Then  User can able to view test status
          | status  | details    |
          | testrun | 10 TEST(S) |
@@ -36,14 +30,4 @@ Feature: Main navigation
 
 
 
-
-
-# Then  close the browser
-# @recentrun
-
-   Scenario: Recent run
-      When Click on recent run
-      And Select product
-      And Select test case
-      Then User can view the tesct case details
 
